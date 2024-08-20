@@ -19,9 +19,9 @@ const Hero = () => {
                 <div className='text-3xl font-semibold'>
                     A Curation of Products and Services
                 </div>
-                <div className='flex items-center bg-black p-3 gap-2 w-full'>
-                    <button className=' text-white text-sm font-medium'>SHOP NOW</button>
-                    <span className='text-orange-500'><BsArrowRight /></span>
+                <div className='flex items-center  p-3 gap-2 w-full '>
+                    <button className=' text-white bg-black text-sm  font-medium  w-32 p-2'>SHOP NOW</button>
+                    <span className='text-orange-500 -ml-6 pr-4'><BsArrowRight /></span>
                 </div>
 
             </div>

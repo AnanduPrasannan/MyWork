@@ -4,7 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Header = () => {
     return (
         <div>
-            <div className='flex container mx-auto justify-between w-screen h-48 border border-red-900'>
+            <div className='flex container mx-auto justify-between w-screen h-48 border border-red-900 pt-4 '>
 
                 <div>
                     <span>
@@ -18,7 +18,7 @@ const Header = () => {
                     </span>
                 </div>
                 <div>
-                    <div className='tracking-widest font-semibold text-2xl'>
+                    <div className='tracking-widest font-semibold text-2xl outline outline-yellow-400'>
                        BEAUTY PIE
                     </div>
                 </div>
@@ -33,11 +33,11 @@ const Header = () => {
                         MORE
                     </span>
                 </div>
-                <div>
+                <div className='flex '>
                     <span>
                         search
                     </span>
-                    <span>
+                    <span >
                     <LuUserCircle2 />
                     </span>
                     <span>
