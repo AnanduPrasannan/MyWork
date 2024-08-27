@@ -3,18 +3,19 @@ import React, { useEffect } from 'react'
 const Toast = ({type,onClose,message}) => {
    
 
-    const  styles=
-    type === "success"?"fixed top-10 right-10 w-20 text-white bg-green-500 font-medium p-2 rounded-md  z-50":"fixed top-10 right-10 w-20 text-white bg-red-500 font-medium p-2 rounded-md  z-50"
-
-useEffect(()=>{
-
+  
+  useEffect(()=>{
+    
     const timer=setTimeout(()=>{
-        onClose()
+      onClose()
     },5000)
     return ()=>{
-        clearTimeout(timer)
+      clearTimeout(timer)
     }
-},[onClose])
+  },[onClose])
+
+  const  styles=
+  type === "success"?"fixed top-10 right-10 w-20 text-white bg-green-500 font-medium p-2 rounded-md  z-50":"fixed top-10 right-10 w-20 text-white bg-red-500 font-medium p-2 rounded-md  z-50"
   return (
     <div>
         <div className={styles}>
