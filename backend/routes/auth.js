@@ -41,6 +41,25 @@ router.post('/login',[check('email','Email field is required').isEmail(),
     res.status(500).json({message:"Error anandu"})
     console.log(err)
    }
+
+   
+router.get('/validateToken',(req,res)=>{
+    res.send({userId:req.userId})
+})
+
+router.post('/logout', (req,res)=>{
+    try{
+
+        res.cookie('auth_token','',{
+            expires:new Date(0),
+            httpOnly:true
+        })
+        res.status(200).json({message:`Logged out succesfully`})
+    }
+    catch(err){
+        console.log(err)
+    }
+})
    
 })
 
