@@ -16,8 +16,8 @@ const Hero = () => {
                 EXPERIENCE SKINCARE BLISS
                 </div>
                 
-                <div className='text-3xl font-semibold'>
-                    A Curation of Products and Services
+                <div className='text-3xl font-semibold w-72  space-y-5 '>
+                    A Curation of Products & Services
                 </div>
                 <div className='flex items-center  p-3 gap-2 w-full '>
                     <button className=' text-white bg-black text-sm  font-medium  w-32 p-2'>SHOP NOW</button>

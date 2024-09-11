@@ -6,35 +6,35 @@ const Header = () => {
         <div>
             <div className='flex container mx-auto justify-between w-screen h-48 border border-red-900 pt-4 '>
 
-                <div>
-                    <span>
+                <div className='space-x-4'>
+                    <span className='font-medium text-sm hover:opacity-40 cursor-pointer'>
                       ALL PRODUCTS
                     </span>
-                    <span>
+                    <span className='font-medium text-sm'>
                     NEW IN
                     </span>
-                    <span>
+                    <span className='font-medium text-sm'>
                         BESTSELLERS
                     </span>
                 </div>
-                <div>
-                    <div className='tracking-widest font-semibold text-2xl outline outline-yellow-400'>
+                <div className='w-48'>
+                    <div className='text-center tracking-widest font-semibold text-2xl opacity-50 '>
                        BEAUTY PIE
                     </div>
                 </div>
-                <div>
-                    <span>
+                <div className='space-x-4'>
+                    <span className='font-medium text-sm'>
                         BACKIN STOCK
                     </span>
-                    <span>
+                    <span className='font-medium text-sm'>
                         SKIN CARE
                     </span>
-                    <span>
+                    <span className='font-medium text-sm'>
                         MORE
                     </span>
                 </div>
-                <div className='flex '>
-                    <span>
+                <div className='flex  space-x-4'>
+                    <span >
                         search
                     </span>
                     <span >
